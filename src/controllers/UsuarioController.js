@@ -83,9 +83,9 @@ class UsuarioController {
         });
       }
 
-      const usuarioDeletado = await usuario.destroy();
+    await usuario.destroy();
 
-      return res.json(usuarioDeletado);
+      return res.json(usuario);
 
     } catch (e) {
       console.log(e);
