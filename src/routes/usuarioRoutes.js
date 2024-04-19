@@ -6,7 +6,7 @@ const router = new Router();
 
 // nao deveriam existir, adicionado para teste crud
 router.get('/', usuarioController.index);
-// router.get('/:id', usuarioController.show);
+router.get('/:id', usuarioController.show);
 
 // esses sim
 router.post('/', usuarioController.store);
