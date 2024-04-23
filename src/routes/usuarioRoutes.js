@@ -9,7 +9,7 @@ router.get('/', usuarioController.index);
 router.get('/:id', usuarioController.show);
 
 // esses sim
-router.post('/', usuarioController.store);
+router.post('/', loginRequired, usuarioController.store);
 router.put('/', loginRequired, usuarioController.update);
 router.delete('/', loginRequired, usuarioController.delete);
 
